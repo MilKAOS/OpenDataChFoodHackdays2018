@@ -1,0 +1,14 @@
+<mat-card class="shoppinglist-card">
+  <mat-card-header>
+    <mat-card-title><p><b>Shopping list - Ingredients</b></p></mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div *ngFor="let ingr of ingredients">
+      {{ingr.amount}} {{ingr.unit}} {{ingr.name}}
+    </div>
+  </mat-card-content>
+<!--   <mat-card-actions>
+    <button mat-button>LIKE</button>
+    <button mat-button>SHARE</button>
+  </mat-card-actions> -->
+</mat-card>

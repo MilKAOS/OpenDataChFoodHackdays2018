@@ -1,0 +1,16 @@
+<mat-card class="recipe-card">
+  <mat-card-header>
+    <mat-card-title><b>{{recipe.name}}</b></mat-card-title>
+  </mat-card-header>
+  <img mat-card-image src="https://api.digimeals.com{{recipe.mainImageUrl}}" alt="">
+  <mat-card-content>
+    <p>Ingredients</p>
+    <div *ngFor="let ingr of recipe.recipe.ingredientsArr">
+      {{ingr.name}}: {{ingr.amount}}
+    </div>
+  </mat-card-content>
+<!--   <mat-card-actions>
+    <button mat-button>LIKE</button>
+    <button mat-button>SHARE</button>
+  </mat-card-actions> -->
+</mat-card>

@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+/* @import '~@angular/material/theming';
+@include mat-core();
+//-------------------------------------------------------------------------------------------------------
+// DEFINING THE BASE THEMING
+//-------------------------------------------------------------------------------------------------------
+$primary: mat-palette($mat-blue-grey);
+$accent: mat-palette($mat-green);
+$warn: mat-palette($mat-red);
+$theme: mat-light-theme($primary, $accent, $warn);
+$dark-theme: mat-dark-theme($primary, $accent, $warn);
+@include angular-material-theme($theme); */
+
+/* @import 'theme';
+
+// Required for Kendo UI
+$accent: mat-color(map-get($theme, primary));
+
+@include mat-core($typography-config);
+@include angular-material-theme($theme);
+
+body {
+  //margin: 0;
+  font: 400 14px/20px Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+  // Helps fonts on OSX looks more consistent with other systems
+  // Isn't currently in button styles due to performance concerns
+  * {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+  }
+} */

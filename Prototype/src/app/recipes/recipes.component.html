@@ -1,0 +1,19 @@
+<div>
+  <app-recipe-search (setFilter)="doSetFilter($event)"></app-recipe-search>
+</div>
+
+<div>&nbsp;</div>
+
+<!-- <div *ngFor="let recipe of recipes" style="margin-bottom: 15px;">
+  <app-recipe [recipe]="recipe"></app-recipe>
+</div> -->
+
+<div *ngIf="showWeekPlan">
+  <app-weekplan [options]="recipes" (createShoppingList)="doCreateShoppingList($event)"></app-weekplan>
+</div>
+
+<div>&nbsp;</div>
+
+<div *ngIf="showShoppingList">
+    <app-shoppinglist [ingredients]="ingredients"></app-shoppinglist>
+</div>

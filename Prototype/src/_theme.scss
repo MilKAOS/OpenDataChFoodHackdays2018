@@ -1,0 +1,6 @@
+$theme-primary: mat-palette($mat-blue, 800);
+$theme-accent: mat-palette($mat-grey, 400);
+$theme: mat-light-theme($theme-primary, $theme-accent);
+$warn: map-get($theme, warn);
+//$background: map-get($theme, background);
+$typography-config: mat-typography-config();

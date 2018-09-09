@@ -1,0 +1,32 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title><b>Filter</b></mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-form-field>
+      <mat-select placeholder="Choose your available kitchen tools..." [formControl]="utensils" multiple>
+        <mat-option *ngFor="let utensil of utensilList" [value]="utensil">{{utensil}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+        <input matInput placeholder="Maximum time to cook (in minutes)..." [(ngModel)]="maxTimeToPrepare">
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-select placeholder="Choose ingredients you want too avoid..." [formControl]="ingredientsAvoid" multiple>
+        <mat-option *ngFor="let ingrAvoid of ingredientsList" [value]="ingrAvoid">{{ingrAvoid}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-select placeholder="Choose ingredients you absolutely want in your dish..." [formControl]="ingredientsWant" multiple>
+          <mat-option *ngFor="let ingrWant of ingredientsList" [value]="ingrWant">{{ingrWant}}</mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <div>
+      <button color="primary" mat-raised-button (click)="onClick()">Set Filter</button>
+    </div>
+  </mat-card-content>
+</mat-card>
